@@ -75,7 +75,7 @@ let employees = {
     designer: [{name: 'Kate', salary: 1800}]
 }
 
-function takeSumSallary(){
+function lockSumSallary(){
     let sum = 0;
     return function sumSallary(obj){
         for(let key in obj){
@@ -91,7 +91,7 @@ function takeSumSallary(){
     }
 }
 
-console.log(takeSumSallary()(employees));
+console.log(lockSumSallary()(employees));
 
 // Завдання 4
 
